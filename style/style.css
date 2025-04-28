@@ -1,0 +1,165 @@
+/* Reset del navegador */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Header del sitio */
+#header{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    height: auto;
+}
+/* Seccion de contacto siempre visible */
+.headerSec{
+    background-color: white;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerSec_divspace{
+    margin-left: 1rem;
+    width: 0.4rem;
+    height: 1.2rem;
+    background-color: #E67E22;
+    border-radius: 20px;
+}
+.headerSec_div{
+    padding: 0%;
+    margin-left: 1rem;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.headerSec_div_img{
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+}
+.headerSec_div_txt{
+    text-decoration: none;
+    color: #8b8c8c;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    margin-left: 0.3em;
+
+}
+
+/* Menu de navegacion */
+.navMenu{
+    height: 4rem;
+    background-color: #0f2636;
+    display: flex;
+    margin: 0;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px  rgb(0, 0, 0, 0.2);
+}
+
+/* Logo de la empresa */
+.navMenu_div{
+    margin-left: 10px;
+    padding: 0;
+    width: 6rem;
+    height: 4rem;
+}
+.navMenu_div_img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Lista de paginas */
+.navMenu_ul_li{
+    width: auto;
+    list-style: none;
+}
+.navMenu_ul_li_a{
+    color: #7F8C8D;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+}
+.navMenu_ul_li_a:hover{
+    color: #ECF0F1;
+    transition: color 0.4s ease-out;
+}
+/* Main del sitio */
+#main{
+    min-height: 100vh;
+    background-color: #ECF0F1;
+}
+/* Pie de pagina */
+#footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    height: auto;
+    width: 100%;
+    background-color: #2D2D2D;
+}
+/* Div que contiene los apartados de: Contacto, Navegacion, Metodos de pago y Metodos de envio */
+.footerBox{
+    padding: 0.5rem;
+    flex-basis: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footerBox_Div{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: flex-start             ;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0.3rem;
+}
+.footerBox_Div_h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+}
+.footerBox_Div_li{
+    list-style: none;
+}
+.footerBox_Div_li_a{
+    text-decoration: none;
+    color: #7F8C8D;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+}
+.footerBox_Div_li_img{
+    width: 1rem;
+    height: 1rem;
+}
+.footerBox_Div_Mpay_img{
+    width: 3rem;
+    height: 3rem;
+}
+.footerBox_Div_Mship_img{
+    width: 4rem;
+    height: 1.5rem;
+}
+/* Div con acceso a redes sociales */
+.footer_S{
+    margin: 0;
+    padding: 1rem;
+}
+.footer_S_img{
+    width: 2rem;
+    height: 2rem;
+}
