@@ -5,8 +5,8 @@
 }
 /* Header del sitio */
 #header{
-    top: 0;
-    position: sticky;
+    /* top: 0;
+    position: sticky; */
     width: 100%;
     height: auto;
 }
@@ -74,29 +74,179 @@
     height: 100%;
 }
 
-/* Lista de paginas */
+/* Menus desplegables Header */
+.nav-left, .nav-center, .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.dropdown{
+    position: relative;
+    margin-right: 1rem;
+}
+.dropdown-toggle{
+    background: white;
+    border-style: none;
+    border-radius: 2rem;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1em;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+/* Listas de menus */
 .navMenu_ul_li{
     width: auto;
     list-style: none;
 }
 .navMenu_ul_li_a{
+    display: block;
     color: #7F8C8D;
     transition: color 0.3s ease;
     text-decoration: none;
-    margin-right: 10px;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1em;
 }
 .navMenu_ul_li_a:hover{
     color: #ECF0F1;
     transition: color 0.4s ease-out;
 }
+
+/* input de busqueda */
+.search-box{
+    display: flex;
+    align-items: center;
+}
+.search-box__label{
+    position: relative;
+}
+/* .search-box__img{
+    position: absolute;
+} */
+#search-input{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
 /* Main del sitio */
 #main{
     min-height: 100vh;
     background-color: #ECF0F1;
+}
+.carrousel-novedades{
+    width: 100%;
+    height: auto;
+    margin-top: 0.2rem;
+    box-shadow: #7f8c8dba 2px 1px 3px ;
+}
+.carrousel-novedades__imgs{
+    width: 100%;
+    height: 28rem;
+    object-fit: fit-content;
+}
+/* Seccion de contenido */
+.contenido{
+    background-color:rgb(225, 225, 225);
+    margin-top: 0.5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.contenido__boxes{
+    display: flex;
+    gap: 1rem;
+}
+.contenido__imgs{
+    width: 3rem;
+    height: 3rem;
+}
+.contenido__p{
+    color: black;
+}
+/* Botones de carrousel */
+.btn{
+    border-style: none;
+}
+.btn__imgs{
+    width: 2rem;
+    height: 2rem;
+}
+/* Margin para Carrouseles */
+.Carrousel{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: rgb(223, 223, 223);
+}
+
+/* Carrousel de Productos */
+.Carrousel-Destacados{
+    padding: 0.5rem;
+    gap: 0.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.Carrousel-Destacados__box{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    gap: 1rem;
+}
+.Carrousel-Destacados__imgs{
+    width: 18rem;
+    height: 12rem;
+}
+
+/* Carrousel de Ofertas */
+.Carrousel-Ofertas{
+    padding: 0.5rem;
+    gap: 0.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.Carrousel-Ofertas__box{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    gap: 1rem;
+}
+
+.Carrousel-Ofertas__imgs{
+    width: 16rem;
+    height: 12rem;
+}
+
+/* Seccion de categorias */
+.sec{
+    background-color: rgb(224, 224, 224);
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+.sec-destacada{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.sec-destacada__boxes{
+    text-align: center;
+}
+.sec-destacada__img{
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
 }
 /* Pie de pagina */
 #footer{
