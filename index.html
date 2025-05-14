@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link al css -->
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/queries.css">
     <!-- Icono de pagina -->
     <link rel="shortcut icon" href="imgs/Logo.png" type="image/x-icon">
     <!-- Fuentes utilizadas -->
@@ -18,68 +19,77 @@
 </head>
 <body id="body">
     <header id="header">
-        <section class="headerSec">
-            <div class="headerSec_div">
-                <img src="https://img.icons8.com/?size=100&id=86875&format=png&color=000000" alt="" class="headerSec_div_img">
-                <a target="_blank" href="" class="headerSec_div_txt">contacto@laobra.com.ar</a>
-            </div>
-            <div class="headerSec_divspace"></div>
-            <div class="headerSec_div">
-                <img src="https://img.icons8.com/?size=100&id=533&format=png&color=000000" alt="" class="headerSec_div_img">
-                <a target="_blank" href="" class="headerSec_div_txt">0802-120-21004</a>
-            </div>
-        </section>
-        <nav class="navMenu">
-            <div class="nav-left">
-                <div class="navMenu_div">
-                    <a href="/">
-                        <img class="navMenu_div_img" src="imgs/Logo.png" alt="">
-                    </a>
+        <!-- Clase para que se quede arriba todo el nav -->
+        <div class="fixed-top">
+            <section class="headerSec">
+                <div class="headerSec_div">
+                    <img src="https://img.icons8.com/?size=100&id=86875&format=png&color=000000" alt="" class="headerSec_div_img">
+                    <a target="_blank" href="" class="headerSec_div_txt">contacto@laobra.com.ar</a>
                 </div>
-                <div class="dropdown">
-                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><img src="https://img.icons8.com/?size=100&id=0hHvb4pS3tau&format=png&color=000000" alt=""> Categorias</button>
-                    <ul class="navMenu_ul dropdown-menu">
-                        <li class="navMenu_ul_li">
-                            <a href="pages/marcas.html" class="dropdown-item navMenu_ul_li_a">Marcas</a>
-                        </li>
-                        <li><a href="pages/productos.html" class="dropdown-item navMenu_ul_li_a">Productos</a></li>
-                        <li><a href="pages/nosotros.html" class="dropdown-item navMenu_ul_li_a">Nosotros</a></li>
-                        <li><a href="pages/servicios.html" class="dropdown-item navMenu_ul_li_a">Servicios</a></li>
-                    </ul>
+                <div class="headerSec_divspace"></div>
+                <div class="headerSec_div">
+                    <img src="https://img.icons8.com/?size=100&id=533&format=png&color=000000" alt="" class="headerSec_div_img">
+                    <a target="_blank" href="" class="headerSec_div_txt">0802-120-21004</a>
                 </div>
-            </div>
-            <div class="nav-center">
-                <div class="search-box">
-                    <label for="search-input" class="search-box__label">
-                        <input type="text" id="search-input" placeholder="¿Que estas buscando?">
-                        <span class="search-icon"><img class="search-box__img" src="https://img.icons8.com/?size=100&id=7695&format=png&color=000000" alt=""></span>
-                    </label>
+            </section>
+            <nav class="navMenu navbar navbar-expand-lg">
+                <div class="containerM">
+                    <div class="nav-left">
+                        <div class="navMenu_div">
+                            <a href="/">
+                                <img class="navMenu_div_img" src="imgs/Logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><img class="dropdown__imgs" src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000" alt=""> <h6>Categorias</h6></button>
+                            <ul class="navMenu_ul dropdown-menu">
+                                <li class="navMenu_ul_li">
+                                    <a href="pages/marcas.html" class="dropdown-item navMenu_ul_li_a">Marcas</a>
+                                </li>
+                                <li><a href="pages/productos.html" class="dropdown-item  navMenu_ul_li_a">Productos</a></li>
+                                <li><a href="pages/nosotros.html" class="dropdown-item  navMenu_ul_li_a">Nosotros</a></li>
+                                <li><a href="pages/servicios.html" class="dropdown-item navMenu_ul_li_a">Servicios</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-center">
+                        <div class="search-box">
+                            <label for="search-input" class="search-box__label">
+                                <input type="text" id="search-input" class="" placeholder="¿Que estas buscando?">
+                                <span class="search-icon"><img class="search-box__img" src="https://img.icons8.com/?size=100&id=7695&format=png&color=000000" alt=""></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="nav-right">
+                        <div class="dropdown"  >
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><img class="dropdown__imgs" src="https://img.icons8.com/?size=100&id=7880&format=png&color=000000" alt="icono-ubicacion"><h6>Estas en</h6></button>
+                            <div id="navbarSupportedContent">
+                                <ul class="navMenu_ul dropdown-menu" >
+                                    <li><a class="dropdown-item navMenu_ul_li_a" href="#">Salta</a></li>
+                                    <li><a class="dropdown-item navMenu_ul_li_a" href="#">Tartagal</a></li>
+                                    <li><a class="dropdown-item navMenu_ul_li_a" href="#">Oran</a></li>
+                                    <li><a class="dropdown-item navMenu_ul_li_a" href="#">Jujuy</a></li>
+                                    <li><a class="dropdown-item navMenu_ul_li_a" href="#">Tucuman</a></li>
+                                    <li><a class="dropdown-item navMenu_ul_li_a" href="#">Catamarca</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <button class="btn-nav">
+                                <a href="#"><img class="btn-nav__imgs" src="https://img.icons8.com/?size=100&id=7819&format=png&color=000000" alt="icon-account"></a>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn-nav">
+                                <a href="#"><img class="btn-nav__imgs" src="https://img.icons8.com/?size=100&id=9720&format=png&color=000000" alt="icon-carrito"></a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="nav-right">
-                <div class="dropdown">
-                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><img src="https://img.icons8.com/?size=100&id=7880&format=png&color=000000" alt="icono-ubicacion"> Estas en</button>
-                    <ul class="navMenu_ul dropdown-menu">
-                        <li><a class="dropdown-item navMenu_ul_li_a" href="">Salta</a></li>
-                        <li><a class="dropdown-item navMenu_ul_li_a" href="">Tartagal</a></li>
-                        <li><a class="dropdown-item navMenu_ul_li_a" href="">Oran</a></li>
-                        <li><a class="dropdown-item navMenu_ul_li_a" href="">Jujuy</a></li>
-                        <li><a class="dropdown-item navMenu_ul_li_a" href="">Tucuman</a></li>
-                        <li><a class="dropdown-item navMenu_ul_li_a" href="">Catamarca</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <button>
-                        <a href="/"><img src="https://img.icons8.com/?size=100&id=7819&format=png&color=000000" alt="icon-account"></a>
-                    </button>
-                </div>
-                <div>
-                    <button>
-                        <a href="/"><img src="https://img.icons8.com/?size=100&id=9720&format=png&color=000000" alt="icon-carrito"></a>
-                    </button>
-                </div>
-            </div>
-        </nav>
+                
+            </nav>
+        </div>
     </header>
 
     <main id="main">
@@ -173,17 +183,29 @@
         <!-- Seccion de Categorias mas populares -->
         <div class="sec">
             <h5>Categorias Destacadas</h5>
-            <div class="sec-destacada">
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Herramientas.jpg" alt=""><p>Herramientas</p></div>
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Carpinteria.jpg" alt=""><p>Carpinteria</p></div>
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\tanques.jpg" alt=""><p>Tanques</p></div>
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Tornilleria.jpg" alt=""><p>Tornilleria</p></div>
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\cortes.jpg" alt=""><p>Cortes</p></div>
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Pinzas.jpg" alt=""><p>Pinzas</p></div>
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Escalera.jpg" alt=""><p>Escaleras</p></div>
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Pinturas.jpg" alt=""><p>Pintura</p></div>
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\rodillos.jpg" alt=""><p>Rodillos</p></div>
-                <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Ceramicas.png" alt=""><p>Ceramica</p></div>
+            <div class="sec-container">
+                <div>
+                    <button class="btn__sec">
+                        <img class="btn__imgs" src="https://img.icons8.com/?size=100&id=37353&format=png&color=000000" alt="icon-arrow-left">
+                    </button>
+                </div>
+                <div class="sec-destacada">
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Herramientas.jpg" alt=""><p>Herramientas</p></div>
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Carpinteria.jpg" alt=""><p>Carpinteria</p></div>
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\tanques.jpg" alt=""><p>Tanques</p></div>
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Tornilleria.jpg" alt=""><p>Tornilleria</p></div>
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\cortes.jpg" alt=""><p>Cortes</p></div>
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Pinzas.jpg" alt=""><p>Pinzas</p></div>
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Escalera.jpg" alt=""><p>Escaleras</p></div>
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Pinturas.jpg" alt=""><p>Pintura</p></div>
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\rodillos.jpg" alt=""><p>Rodillos</p></div>
+                    <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias\Ceramicas.png" alt=""><p>Ceramica</p></div>
+                </div>
+                <div>
+                    <button class="btn__sec">
+                        <img class="btn__imgs" src="https://img.icons8.com/?size=100&id=37354&format=png&color=000000" alt="icon-arrow-right">
+                    </button>
+                </div>
             </div>
         </div>
     </main>

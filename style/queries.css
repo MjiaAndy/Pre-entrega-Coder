@@ -1,0 +1,148 @@
+/* //////////////////////////// Mobile Desing //////////////////////////// */
+
+/* ///Pagina de Inicio/// */
+@media (min-width: 319px) and (max-width:768px) {
+    
+    /* Menu Nav */
+    .headerSec_div_txt{
+        font-size: 0.8em;
+    }
+    .navMenu{
+        height: 3em;
+    }
+    .navMenu_div{
+        width: 2em;
+        height: 2em;
+        object-fit: cover;
+    }
+    .containerM{
+        flex-wrap: nowrap;
+        padding:0%;
+        margin: 0px;
+        justify-content: space-between;
+        gap: 0.1em;
+    }
+    .nav-left, .nav-center, .nav-right{
+        gap: 0.2em;
+    }
+
+    .search-box__img{
+        width: 1em;
+        height: 1em;
+    }
+    .search-icon{
+        top: 10%;
+        right: 0.2em;
+    }
+    #search-input{
+        padding: 0.5em;
+        width: 12em;
+        font-size: 0.8em;
+    }
+    .btn-nav{
+        border-radius: 0.7em;
+        padding: 5px;
+    }
+    .dropdown{
+        margin-right: 0.2em;
+    }
+    .dropdown-toggle{
+        padding: 0;
+    }
+    .dropdown__imgs, .btn-nav__imgs{
+        width: 1.3em;
+        height: 1.3em;
+    }
+    .navMenu .dropdown-toggle h6{
+        display:none;
+    }
+
+    /* Banner Principal */
+    .carrousel-novedades__imgs{
+        height: 16em;
+    }
+
+    /* Seccion de contenido */
+    .contenido{
+        padding: 0.2em;
+        margin-top: 0.5rem;
+    }
+    .contenido__boxes{
+        gap: 0.2em;
+    }
+    .contenido__imgs{
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .contenido__p{
+        font-size: xx-small;
+        margin: 0;
+    }
+
+    /* Carrouseles Marign */
+    .Carrousel{
+        margin-top: 0.5rem;
+    }
+
+
+    /* Carrousel P Destacados */
+    .Carrousel-Destacados__imgs{
+        width: 12em;
+        height: 8em;
+    }
+
+    /* Carrousel Ofertas */
+    .Carrousel-Ofertas__imgs{
+        width: 12em;
+        height: 8em;
+    }
+    
+    /* Seccion Categorias */
+    .sec{
+        margin: 0.5rem 0 0.5rem 0;
+    } 
+    .sec-destacada{
+        gap: 1.8rem;
+    } 
+    .btn__sec{
+        display: block;
+    }
+}
+
+
+/* Pagina de  Productos */
+
+/* Pagina de  Marcas*/
+.Bcumb{
+    margin-top: 6rem;
+}
+.bar__imgs{
+    width: 1em;
+    height: 1em;
+}
+.bar__btn{
+    font-size: smaller;
+    padding: 0.5em;
+}
+.ctn__boxes{
+    width: 22em;
+}
+.ctn__boxes__cont__imgs{
+    width: 22em;
+    object-fit: contain;
+}
+/* Pagina de  Nosotros*/
+
+/* Pagina de  Servicios*/
+
+/* /////////////////////////// Tablet Desing ///////////////////////////// */
+
+/* Pagina de  Inicio*/
+
+/* Pagina de  Productos*/
+
+/* Pagina de  Marcas*/
+
+/* Pagina de  Nosotros*/
+
+/* Pagina de  Servicios*/
