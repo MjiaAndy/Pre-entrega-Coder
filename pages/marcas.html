@@ -6,63 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link al css -->
     <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/queries.css">
     <!-- Icono de pagina -->
-    <link rel="shortcut icon" href="/imgs/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/medias\icons\Logo.webp" type="image/x-icon">
     <!-- Fuentes utilizadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <!-- Link al bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Link de iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Marcas</title>
 </head>
 <body id="body">
     <header id="header">
-        <!-- Clase para que se quede arriba todo el nav -->
-        <div class="fixed-top">
+        <!-- Clase de bootstrap para fijar arriba
+            Ahora resulta que esa clase complica el uso del modal y offcanvas, tratare de solucionarlo
+        -->
+        <div class="">
+            <!-- ///-Box-contacto-fijo-/// -->
             <section class="headerSec">
                 <div class="headerSec_div">
-                    <img src="https://img.icons8.com/?size=100&id=86875&format=png&color=000000" alt="" class="headerSec_div_img">
-                    <a target="_blank" href="" class="headerSec_div_txt">contacto@laobra.com.ar</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-envelope-at-fill headerSec_div_img" viewBox="0 0 16 16" alt="">
+                        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                    </svg>
+                    <a target="_blank" href="#" class="headerSec_div_txt">contacto@laobra.com.ar</a>
                 </div>
                 <div class="headerSec_divspace"></div>
                 <div class="headerSec_div">
-                    <img src="https://img.icons8.com/?size=100&id=533&format=png&color=000000" alt="" class="headerSec_div_img">
-                    <a target="_blank" href="" class="headerSec_div_txt">0802-120-21004</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-telephone-fill headerSec_div_img" viewBox="0 0 16 16" alt="">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                    <a target="_blank" href="#" class="headerSec_div_txt">0802-120-21004</a>
                 </div>
             </section>
-            <nav class="navMenu navbar navbar-expand-lg">
+            <!-- ////////////-NAV-/////////// -->
+            <nav class="navMenu">
                 <div class="containerM">
+                    <!-- ///-Box-izquierda-del-nav-/// -->
                     <div class="nav-left">
                         <div class="navMenu_div">
                             <a href="../index.html">
-                                <img class="navMenu_div_img" src="/imgs/Logo.png" alt="">
+                                <img class="navMenu_div_img" src="/medias/icons/Logo.webp" alt="Logo-web">
                             </a>
                         </div>
+                        <!-- ///-Offcanvas-de-Bootstrap-/// -->
+                        <button class="btn nav-left__off" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <img class="dropdown__imgs" src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000" alt="">
+                        </button>
+                        <div class="offcanvas offcanvas-start nav-left__off" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="offcanvas-body__account">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="offcanvas-body__account__img" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                    </svg>
+                                    <div class="offcanvas-body__account__txt">
+                                        <h3>¡Hola de nuevo!</h3>
+                                        <a href="#" type="button" data-bs-target="#exampleModal" data-bs-toggle="modal">Iniciar session</a>
+                                    </div>
+                                </div>
+                                <!-- ///-Acordeon-de-Bootstrap-/// -->
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Categorias
+                                        </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li><a href="/">Marcas</a></li>
+                                                    <li><a href="/">Productos</a></li>
+                                                    <li><a href="/">Servicios</a></li>
+                                                    <li><a href="/">Nostros</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ///-Fin-de-Acordeon-/// -->
+                            </div>
+                        </div>
+                        <!-- ///-Fin-de-Offcanvas-/// -->
+                        
+                        <!-- ///-Boton-categorias-/// -->
                         <div class="dropdown">
-                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><img class="dropdown__imgs" src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000" alt=""> <h6>Categorias</h6></button>
+                            <button class="dropdown-toggle dropdown-toggle-1" type="button" data-bs-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-list dropdown__imgs" viewBox="0 0 16 16" alt="icono-menu">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg> <h6>Categorias</h6></button>
                             <ul class="navMenu_ul dropdown-menu">
                                 <li class="navMenu_ul_li">
-                                    <a href="/" class="dropdown-item navMenu_ul_li_a">Marcas</a>
+                                    <a href="#" class="dropdown-item navMenu_ul_li_a">Marcas</a>
                                 </li>
                                 <li><a href="productos.html" class="dropdown-item  navMenu_ul_li_a">Productos</a></li>
                                 <li><a href="nosotros.html" class="dropdown-item  navMenu_ul_li_a">Nosotros</a></li>
                                 <li><a href="servicios.html" class="dropdown-item navMenu_ul_li_a">Servicios</a></li>
                             </ul>
                         </div>
+                        <!-- ///-Fin-boton-/// -->
                     </div>
+                    <!-- ///-Fin box izquierda-/// -->
+
+                    <!-- ///-Box centro del nav-/// -->
                     <div class="nav-center">
+                        <!-- ///-Barra-de-busqueda-/// -->
                         <div class="search-box">
                             <label for="search-input" class="search-box__label">
                                 <input type="text" id="search-input" class="" placeholder="¿Que estas buscando?">
                                 <span class="search-icon"><img class="search-box__img" src="https://img.icons8.com/?size=100&id=7695&format=png&color=000000" alt=""></span>
                             </label>
                         </div>
+                        <!-- ///-Fin-barra-/// -->
                     </div>
+                    <!-- ///-Fin-box-centro-/// -->
+
+                    <!-- ///-Box derecha del nav-/// -->
                     <div class="nav-right">
+                        <!-- ///-Boton-ubicacion-/// -->
                         <div class="dropdown"  >
-                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><img class="dropdown__imgs" src="https://img.icons8.com/?size=100&id=7880&format=png&color=000000" alt="icono-ubicacion"><h6>Estas en</h6></button>
+                            <button class="dropdown-toggle dropdown-toggle-2" type="button" data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-geo-alt-fill dropdown__imgs" viewBox="0 0 16 16" alt="icono-ubicacion">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                            </svg><h6>Estas en</h6></button>
                             <div id="navbarSupportedContent">
                                 <ul class="navMenu_ul dropdown-menu" >
                                     <li><a class="dropdown-item navMenu_ul_li_a" href="#">Salta</a></li>
@@ -73,22 +145,123 @@
                                     <li><a class="dropdown-item navMenu_ul_li_a" href="#">Catamarca</a></li>
                                 </ul>
                             </div>
+                        </div>
+                        <!-- ///-Fin-boton-/// -->
+
+                        <!-- Modal para crear cuenta -->
+                        <button type="button" class="btn btn-nav btn-nav-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-person-circle btn-nav__imgs" viewBox="0 0 16 16" alt="icon-user">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                            </svg>
+                        </button>
+                        <!-- Fin-boton -->
+
+                        <!-- Cuerpo-del-Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                <h2 class="modal-title fs-2" id="exampleModalLabel">Iniciar Session</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-target="exampleModal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="Modal__body">
+                                        <div class="Modal__body__input">
+                                            <div class="mb-3 row g-3">
+                                                <div class="col-auto">
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 align-items-center">
+                                                <div class="col-auto">
+                                                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Contraseña">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <span id="passwordHelpInline" class="form-text ">
+                                                    de 8-20 caracteres.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Modal__body__a">
+                                            <div class="form-check">
+                                                <input class="form-check-input " type="checkbox" value="" id="checkChecked" checked>
+                                                <label class="form-check-label me-3" for="checkChecked">
+                                                    Recordar usuario
+                                                </label>
+                                                <span><a href="#">olvidaste la contraseña?</a></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="Modal__body__btn">
+                                            <button class="Modal__body__btn-btns">
+                                                Registrarse
+                                            </button>
+                                            <button class="Modal__body__btn-btns">
+                                                Acceder
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer col-4 col-sm-8">
+                                    <div class="Modal__footer">
+                                        <h3 class="Modal__footer__h3">o usar tu cuenta de</h3>
+                                        <div>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-google" viewBox="0 0 16 16" alt="icon-google">
+                                                    <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Fin-cuerpo-modal -->
+
+                        <!-- Offcanvas para carrito -->
+                        <div class="nav-right__off">
+                            <button class="btn btn-nav btn-nav-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-cart4 btn-nav__imgs" viewBox="0 0 16 16" alt="icon-carrito">
+                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                                </svg>
+                            </button>
+                            
+                            <div class="offcanvas offcanvas-end nav-right__off__canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasRight" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div>
+                                        Hola mundo
+                                    </div>
+                                </div>
+                            </div>
                             
                         </div>
-                        <div>
-                            <button class="btn-nav">
-                                <a href="#"><img class="btn-nav__imgs" src="https://img.icons8.com/?size=100&id=7819&format=png&color=000000" alt="icon-account"></a>
-                            </button>
-                        </div>
-                        <div>
-                            <button class="btn-nav">
-                                <a href="#"><img class="btn-nav__imgs" src="https://img.icons8.com/?size=100&id=9720&format=png&color=000000" alt="icon-carrito"></a>
-                            </button>
-                        </div>
+                        <!-- ///-Fin-offcanvas-/// -->
                     </div>
+
+                    <!-- ///-Fin-box-derecha-/// -->
                 </div>
-                
+
             </nav>
+            <!-- ////////////-Fin-Nav-///////////// -->
+        
         </div>
     </header>
 
@@ -132,132 +305,183 @@
         <section class="ctn">
             <div class="ctn__boxes">
                 <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas\black-decker-3.jpg" alt="icon-brands">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/black-decker-3.webp" alt="icon-brands">
                     <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
                 </div>
             </div>
             <div class="ctn__boxes">
                 <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/dewalt-logo-0.png" alt="icon-brands">
-                    <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
-                </div>
-            </div>
-
-            <div class="ctn__boxes">
-                <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/foset.png" alt="icon-brands">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/dewalt-logo-0.webp" alt="icon-brands">
                     <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
                 </div>
             </div>
 
             <div class="ctn__boxes">
                 <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/KT-Lineman-Coin.png" alt="icon-brands">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/foset.webp" alt="icon-brands">
                     <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
                 </div>
             </div>
 
             <div class="ctn__boxes">
                 <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/Logo-Bosch.png" alt="icon-brands">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/KT-Lineman-Coin.webp" alt="icon-brands">
                     <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
                 </div>
             </div>
 
             <div class="ctn__boxes">
                 <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/Makita-logo.png" alt="icon-brands">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/Logo-Bosch.webp" alt="icon-brands">
                     <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
                 </div>
             </div>
 
             <div class="ctn__boxes">
                 <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/milwaukee-tool-logo-0.png" alt="icon-brands">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/Makita-logo.webp" alt="icon-brands">
                     <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
                 </div>
             </div>
 
             <div class="ctn__boxes">
                 <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/stanley-logo-0.png" alt="icon-brands">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/milwaukee-tool-logo-0.webp" alt="icon-brands">
                     <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
                 </div>
             </div>
 
             <div class="ctn__boxes">
                 <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/truper-1.jpg" alt="icon-brands">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/stanley-logo-0.webp" alt="icon-brands">
                     <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
                 </div>
             </div>
 
             <div class="ctn__boxes">
                 <div class="ctn__boxes__cont">
-                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/URREA_logo.jpg" alt="icon-brands">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/truper-1.webp" alt="icon-brands">
+                    <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
+                </div>
+            </div>
+
+            <div class="ctn__boxes">
+                <div class="ctn__boxes__cont">
+                    <img class="ctn__boxes__cont__imgs" src="/medias\Pagina Marcas/URREA_logo.webp" alt="icon-brands">
                     <button class="ctn__boxes__cont__btn" type="button"><a href="#">Ver mas</a></button>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- //////////////-Footer-////////////// -->
     <footer id="footer">
         <div class="footerBox">
-            <div class="footerBox_Div">
-                <h2 class="footerBox_Div_h2">Navegacion
-                    <ul>
-                        <li class="footerBox_Div_li"><a href="" class="footerBox_Div_li_a">Financiacion</a></li>
-                        <li class="footerBox_Div_li"><a href="" class="footerBox_Div_li_a">Sucursales</a></li>
-                        <li class="footerBox_Div_li"><a href="" class="footerBox_Div_li_a">Terminos y Condiciones</a></li>
+            <!-- ///-Box-Menu-de-navegacion-/// -->
+            <div class="footerBox__Menu">
+                <h2 class="footerBox__h2">Navegacion
+                    <ul class="footerBox__ul">
+                        <li class="footerBox__li"><a href="/" class="footerBox__li__a">Financiacion</a></li>
+                        <li class="footerBox__li"><a href="/" class="footerBox__li__a">Sucursales</a></li>
+                        <li class="footerBox__li"><a href="/" class="footerBox__li__a">Metodos de envio</a></li>
                     </ul>
                 </h2>
             </div>
-            <div class="footerBox_Div">
-                <h2 class="footerBox_Div_h2">Contacto
-                    <ul >
-                        <li class="footerBox_Div_li">
-                            <img src="https://img.icons8.com/?size=100&id=86875&format=png&color=000000" alt="" class="footerBox_Div_li_img">
-                            <a target="_blank" href="" class="footerBox_Div_li_a">contacto@laobra.com.ar</a></li>
-                        <li class="footerBox_Div_li">
-                            <img src="https://img.icons8.com/?size=100&id=533&format=png&color=000000" alt="" class="footerBox_Div_li_img">
-                            <a target="_blank" href="" class="footerBox_Div_li_a">0802-120-21004</a></li>
+            <!-- ///-Box-de-contacto-/// -->
+            <div class="footerBox__C">
+                <h2 class="footerBox__h2">Contacto
+                    <ul class="footerBox__ul">
+                        <li class="footerBox__li">
+                            <svg xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-envelope-at-fill footerBox__li__img" viewBox="0 0 16 16">
+                                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                            </svg> 
+                            <a target="_blank" href="" class="footerBox__li__a">contacto@laobra.com.ar</a></li>
+                        <li class="footerBox__li">
+                            <svg xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-telephone-fill footerBox__li__img" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                            </svg>
+                            <a target="_blank" href="" class="footerBox__li__a">0802-120-21004</a></li>
                     </ul>
                 </h2>
             </div>
-            <div class="footerBox_Div">
-                <h2 class="footerBox_Div_h2">Metodos de pago:</h2>
+            <!-- ///-Box-Metodos-de-pago-/// -->
+            <div class="footerBox__Mp">
+                <h2 class="footerBox__h2">Metodos de pago:</h2>
                 <div>
-                    <img src="/imgs/1156750_finance_mastercard_payment_icon.png" alt="" class="footerBox_Div_Mpay_img">
-                    <img src="/imgs/1156753_finance_payment_visa_icon.png" alt="" class="footerBox_Div_Mpay_img">
-                    <img src="/imgs/1933703_charge_credit card_debit_mastercard_payment_icon.png" alt="" class="footerBox_Div_Mpay_img">
-                    <img src="/imgs/1933704_american express_amex_charge_credit card_payment_icon.png" alt="" class="footerBox_Div_Mpay_img">
-                    <img src="/imgs/206679_skrill_method_payment_icon.png" alt="" class="footerBox_Div_Mpay_img">
-                    <img src="/imgs/206681_payment_bitcoin_method_icon.png" alt="" class="footerBox_Div_Mpay_img">
-                    <img src="/imgs/701549_bank_card_payment_rupay_icon.png" alt="" class="footerBox_Div_Mpay_img">
-                    <img src="/imgs/1156727_finance_payment_paypal_icon.png" alt="" class="footerBox_Div_Mpay_img">
-                    <img src="/imgs/7422518_applepay_payments_payment_shopping_icon.png" alt="" class="footerBox_Div_Mpay_img">
+                    <picture>
+                        <img src="/medias\icons\mastercard_payment_icon.webp" alt="logo-mastercard" class="footerBox__Mp__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\visa_icon.webp" alt="logo-visa" class="footerBox__Mp__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\card_debit_mastercard.webp" alt="logo-mastercard-debit" class="footerBox__Mp__img" >
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\american express.webp" alt="logo-american-express" class="footerBox__Mp__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\skrill_icon.webp" alt="logo-skrill" class="footerBox__Mp__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\bitcoin_method_icon.webp" alt="logo-bitcoin" class="footerBox__Mp__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\rupay_icon.webp" alt="logo-rupay" class="footerBox__Mp__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\paypal_icon.webp" alt="logo-paypal" class="footerBox__Mp__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\pplepay_payment.webp" alt="logo-applepay" class="footerBox__Mp__img">
+                    </picture>
                 </div>
             </div>
-            <div class="footerBox_Div">
-                <h2 class="footerBox_Div_h2">Metodos de envio:</h2>
+            <!-- ///-Metodos-de-envio-/// -->
+            <div class="footerBox__Me">
+                <h2 class="footerBox__h2">Metodos de envio:</h2>
                 <div>
-                    <img src="/imgs/logo-andreani.png" alt="" class="footerBox_Div_Mship_img">
-                    <img src="/imgs/fedex.png" alt="" class="footerBox_Div_Mship_img">
-                    <img src="/imgs/flash.png" alt="" class="footerBox_Div_Mship_img">
-                    <img src="/imgs/viacargo.png" alt="" class="footerBox_Div_Mship_img">
-                    <img src="/imgs/ocaenvios1.png" alt="" class="footerBox_Div_Mship_img">
+                    <picture>
+                        <img src="/medias\icons\logo-andreani.webp" alt="logo-andreani" class="footerBox__Me__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\fedex.webp" alt="logo-fedex" class="footerBox__Me__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\flash.webp" alt="logo-flash" class="footerBox__Me__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\viacargo.webp" alt="logo-viacargo" class="footerBox__Me__img">
+                    </picture>
+                    <picture>
+                        <img src="/medias\icons\ocaenvios1.webp" alt="logo-oca" class="footerBox__Me__img">
+                    </picture>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer_S">
-            <h2>Seguinos</h2>
-            <a target="_blank" href="https://www.tiktok.com/?kuid=31b6d78a-c086-437f-9ab0-df56eaf7fd8b&kref=vGWRdzLJnjYf"><img src="https://img.icons8.com/?size=100&id=juS4pYkbvSCh&format=png&color=000000" class="footer_S_img"  alt=""></a>
-            <a target="_blank" href="https://www.facebook.com/"><img src="https://img.icons8.com/?size=100&id=118490&format=png&color=000000" class="footer_S_img"  alt=""></a>
-            <a target="_blank" href="https://www.instagram.com/"><img src="https://img.icons8.com/?size=100&id=84884&format=png&color=000000" class="footer_S_img"  alt=""></a>
-            <a target="_blank" href="https://www.linkedin.com/feed/"><img src="https://img.icons8.com/?size=100&id=84888&format=png&color=000000" class="footer_S_img"  alt=""></a>
+            <!-- ///-Box-redes-sociales-/// -->
+            <div class="footerBox__Social">
+                <h2 class="footerBox__h2">Seguinos</h2>
+                <a target="_blank" href="https://www.tiktok.com/?kuid=31b6d78a-c086-437f-9ab0-df56eaf7fd8b&kref=vGWRdzLJnjYf"><svg class="footerBox__Social__img"  alt="" xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-tiktok" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                </svg></a>
+                <a target="_blank" href="https://www.facebook.com/"><svg class="footerBox__Social__img"  alt="" xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg></a>
+                <a target="_blank" href="https://www.instagram.com/"><svg class="footerBox__Social__img"  alt="" xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg></a>
+                <a target="_blank" href="https://www.linkedin.com/feed/"><svg class="footerBox__Social__img"  alt="" xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg></a>
+            </div>
+            <!-- ///-Lineas-del-footer-y-Copyright-/// -->
+            <div class="Line__footer Line__bottom" ></div>
+            <div class="Line__footer Line__right" ></div>
+            <div class="footer__copy"><h5 class="footerBox__h5">Copyright © 2025 - La obra</h5> <a href="/">Terminos y Condiciones</a> </div>
         </div>
     </footer>
+    <!-- //////////////-Fin-del-footer-////////////// -->
 
     <!-- Scrip del bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>

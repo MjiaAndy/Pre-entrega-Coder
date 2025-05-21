@@ -1,23 +1,32 @@
-/* Reset del navegador */
+/* ///////////////////Reset del navegador/////////////////// */
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal; 
+    font-size: 16px;
 }
-/* Header del sitio */
+/* ///Header del sitio/// */
 #header{
     width: 100%;
     height: auto;
 }
-/* Seccion de contacto siempre visible */
+#header .navbar{
+    padding: 0;
+}
+/* ///Seccion de contacto siempre visible/// */
 .headerSec{
     background-color: white;
     height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.6rem;
 }
 .headerSec_divspace{
-    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 0.4rem;
     height: 1.4rem;
     background-color: #E67E22;
@@ -25,7 +34,6 @@
 }
 .headerSec_div{
     padding: 0%;
-    margin-left: 1rem;
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -40,11 +48,7 @@
 .headerSec_div_txt{
     text-decoration: none;
     color: #8b8c8c;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1rem;
-    margin-left: 0.2em;
+    margin-left: 0.2rem;
     transition: 0.2s;
 }
 .headerSec_div_txt:hover{
@@ -52,24 +56,18 @@
     transition: 0.3s;
 }
 
-/* Menu de navegacion */
+/* ///Menu de navegacion/// */
 .navMenu{
-    height: 5rem;
+    height: auto;
     background-color: #0f2636;
-    display: flex;
     margin: 0;
-    padding:0;
-    align-items: center;
-    justify-content: space-between;
     box-shadow: 0px 4px 6px  rgba(0, 0, 0, 0.264);
 }
 
 /* Logo de la empresa */
 .navMenu_div{
-    margin-left: 10px;
-    padding: 0;
     width: 6rem;
-    height: 4rem;
+    height: 4.5rem;
 }
 .navMenu_div_img{
     width: 100%;
@@ -79,8 +77,9 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding:0 2px 0 2px;
+    padding:0.5rem;
 }
 
 /* Menus desplegables Header */
@@ -88,6 +87,12 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+.nav-left .nav-left__off{
+    display: none;
+}
+.nav-right .nav-right__off__canvas{
+    display: none;
 }
 .dropdown{
     position: relative;
@@ -106,7 +111,9 @@
     cursor: pointer;
     transition: 0.2s;
 }
-
+.dropdown-toggle h6{
+    margin: 0;
+}
 
 .dropdown-toggle:hover{
     background: #22567b;
@@ -138,7 +145,6 @@
 .dropdown__imgs{
     width: 2rem;
     height: 2rem;
-    filter: invert(100%);
 }
 
 /* input de busqueda */
@@ -150,8 +156,8 @@
     position: relative;
 }
 .search-box__img{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     opacity: 50%;
 }
 .search-icon{
@@ -162,30 +168,61 @@
 }
 #search-input{
     padding: 1rem;
-    width: 18em;
+    width: 40rem;
+    height: 3rem;
     border-radius: 2rem;
     font-size: 1rem;
 }
 
 /* Botones de cuenta y carrito */
 .btn-nav{
-    background: none;
+    /* background: none; */
     border: none;
     border-radius: 1.5rem;
     padding: 8px;
     transition: 0.2s;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .btn-nav:hover{
     background: #22567b;
     transition: 0.4s;
 }
 .btn-nav__imgs{
-    width: 3rem;
-    height: 3rem;
-    filter: invert(100%);
+    width: 2rem;
+    height: 2rem;
 }
 
+/* ///-Modal-usuario-/// */
+/* Footer-modal */
+.Modal__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.Modal__body__btn{
+    display: flex;
+    gap: 2rem;
+}
+.Modal__body__btn-btns{
+    padding: 0.3rem;
+    color: #f5f5f5;
+    border-radius: 0.8rem;
+    background-color: #030303;
+    border-style: none;
+}
+.Modal__body__a .form-check span a{
+    color: #6f6f6f;
+}
+.modal-footer .Modal__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Modal__footer__h3{
+    font-size: smaller;
+}
 
 
 /* Main del sitio */
@@ -197,7 +234,7 @@
 .carrousel-novedades{
     width: 100%;
     height: auto;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     box-shadow: #7f8c8dba 2px 1px 3px ;
 }
 .carrousel-novedades__imgs{
@@ -322,7 +359,7 @@
 
 /* PAGINA DE PRODUCTOS Y MARCAS */
 .Bcumb{
-    margin-top: 8rem;
+    margin-top: 2rem;
     padding-left: 1rem;
 }
 .breadcrumb{
@@ -498,59 +535,65 @@
 /* //////////////////////////////////// PAGINA DE NOSOTROS /////////////////////////////////////// */
 .sec-Grid{
     background: radial-gradient(circle farthest-corner at 50% 20%, rgb(16, 16, 16), #0f2636);
-    margin-top: 7rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    /* margin-top: 7rem; */
+    padding: 2rem 1rem 2rem 1rem;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    row-gap: 1rem;
-    column-gap: 1rem;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 0.2fr 1fr;
+    row-gap: 3rem;
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
-    "tleft vd vd vd tright"
-    "tleft vd vd vd tright"
-    "cleft cleft2 Cent img1 txt1"
-    "txt2 img2 Cent cright2 cright2"
-    "fleft fleft Cent img3 txt3"
+    "vd vd vd"
+    "mleft cn nd"
+    "nd2 cn mright"
+    "mleft2 cn nd3"
     ;
 }
 .sec-Grid__vid{
     grid-area: vd;
-    width: border-box;
-    height: 32rem;
+    width: 100%;
+    height: fit-content;
 }
 .line{
     margin: 0 auto;
-    grid-area: Cent;
-    width: 0.2rem;
+    grid-area: cn;
+    width: 0.4rem;
     height: 85%;
     background-color: #ed7c47;
     border-radius: 0.2em;
     box-shadow: rgba(255, 255, 255, 0.537) 1px 2px 2px;
 
 }
-.sec-Grid__img1{
-    grid-area: img1;
-}
 .sec-Grid__p1{
-    grid-area: txt1;
-    text-align: left;
-}
-.sec-Grid__img2{
-    grid-area: img2;
-}
-.sec-Grid__p2{
-    grid-area: txt2;
     text-align: right;
 }
-.sec-Grid__img3{
-    grid-area: img3;
-}
-.sec-Grid__p3{
-    grid-area: txt3;
+.sec-Grid__p2{
     text-align: left;
 }
-.sec-Grid__boxI{
+.sec-Grid__p3{
+    text-align: right;
+} 
+.sec-Grid__box-1{
+    grid-area: mleft;
+    flex-direction: row-reverse;
+}
+.sec-Grid__box-2{
+    grid-area: mright;
+}
+.sec-Grid__box-3{
+    grid-area: mleft2;
+    flex-direction: row-reverse;
+}
+
+.sec-Grid__boxes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sec-Grid__ctnImg{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -558,94 +601,464 @@
     height: auto
 }
 .sec-Grid__imgs{
-    width: 22em;
-    height: 18em;
-    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 0.4em;
     box-shadow: #e9e9e99b 1px 1px 10px;
     transition: 0.2s ease;
 }   
+.sec-Grid__box-3 .sec-Grid__box-3__img{
+    height: 32rem;
+}
 .sec-Grid__imgs:hover{
     box-shadow: #f5f5f5 1px 1px 28px;
     transform: scale(1.02, 1.02);
     transition: 0.3s ease;
 }
 .sec-Grid__txts{
+    width: 100%;
+    height: fit-content;
     color: white;
     font-weight: 400;
-    font-size: small;
+    font-size: smaller;
     display: block;
-    padding: 0.4em;
-    background-color: #2d2d2d79;
+    padding: 0.4rem;
+    background-color: #2d2d2d54;
     border-radius: 0.2rem;
     height: fit-content;
-    backdrop-filter: blur(1em);
+    backdrop-filter: blur(2em);
 }
 
-
-
-/*///////////////////////////////////// FOOTER ///////////////////////////////////////// */
-#footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-    height: auto;
-    width: 100%;
-    background-color: #2D2D2D;
-}
-/* Div que contiene los apartados de: Contacto, Navegacion, Metodos de pago y Metodos de envio */
-.footerBox{
-    padding: 0.5rem;
-    flex-basis: 65%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.footerBox_Div{
+/* ///////////////////////////////////////-PAGINA-SERVICIOS-////////////////////////////////////// */
+.srvc-body{
     display: flex;
     flex-direction: column;
-    text-align: start;
-    justify-content: flex-start             ;
-    width: fit-content;
-    height: fit-content;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem;
     margin: 0;
-    padding: 0.3rem;
 }
-.footerBox_Div_h2{
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1rem;
+.srvc-body__bner{
+    width: auto;
+    height: 34rem;
+    object-fit: cover;
 }
-.footerBox_Div_li{
+.srvc-body__seccion{
+    display: flex;
+    gap: 1rem;
+}
+.srvc-body__services{
+    display: flex;
+    gap: 1rem;
+}
+.srvc-body__howto{
+    text-align: center;
+}
+.srvc-body__howto__box{
+    position: relative;
+    display: flex;
+    gap: 2rem;
+}
+.serv-line{
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+    width: 100%;
+    height: 0.5rem;
+    color: #22567b;
+}
+/*///////////////////////////////////// FOOTER ///////////////////////////////////////// */
+#footer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    height: auto;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+    background-color: #2F3133;
+}
+/* ///Grid/// */
+.footerBox{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.1fr 1fr;
+    grid-template-areas: 
+    "Menunav Contacto Lright Social"
+    "Me Mp Lright Nd"
+    "Lbottom Lbottom Lbottom Lbottom"
+    "Copyr Copyr Copyr Copyr";
+    row-gap: 1rem;
+    column-gap: 3rem;
+}
+
+/* ///Disposicion boxes/// */
+.footerBox__Menu{
+    grid-area: Menunav;
+}
+.footerBox__C{
+    grid-area: Contacto;
+}
+.footerBox__Social{
+    grid-area: Social;
+}
+.footerBox__Me{
+    grid-area: Me;
+}
+.footerBox__Mp{
+    grid-area: Mp;
+}
+
+
+/* ///Textos del footer/// */
+.footerBox__h2{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+.footerBox__ul{
+    padding: 0 0 0 0.5rem
+}
+.footerBox__li{
     list-style: none;
 }
-.footerBox_Div_li_a{
+.footerBox__li__a{
+    display: inline-block;
     text-decoration: none;
-    color: #7F8C8D;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    color: #7d7d7d;
     font-size: 1rem;
+    transition: 0.3s;
 }
-.footerBox_Div_li_img{
+.footer__copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    grid-area: Copyr;
+}
+.footer__copy h5{
+    margin: 0;
+    color: white;
+}
+.footer__copy a{
+    color: #7d7d7d;
+    transition: 0.3s;
+}
+
+/* ///Imagenes del footer ///*/
+
+/* Img de contactos */
+.footerBox__li__img{
     width: 1rem;
     height: 1rem;
+    object-fit: contain;
 }
-.footerBox_Div_Mpay_img{
+/* Img de metodos de pago */
+.footerBox__Mp__img{
     width: 3rem;
     height: 3rem;
+    object-fit: contain;
+    transition: 0.3s;
 }
-.footerBox_Div_Mship_img{
-    width: 4rem;
-    height: 1.5rem;
+/* Img de metodos de envios */
+.footerBox__Me__img{
+    width: 4.5rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius: 1rem;
+    transition: 0.3s;
 }
-/* Div con acceso a redes sociales */
-.footer_S{
-    margin: 0;
-    padding: 1rem;
-}
-.footer_S_img{
+/* Img de redes sociales */
+.footerBox__Social__img{
     width: 2rem;
     height: 2rem;
+    object-fit: contain;
+    transition: 0.3s;
 }
+
+/* ///Efectos de Hover/// */
+.footer__copy a:hover, .footerBox__li__a:hover{
+    color: #F1F1EB;
+    transform: translate(1px, 2px);
+    transition: 0.2s;
+}
+
+.footerBox__Social__img:hover, .footerBox__Me__img:hover, .footerBox__Mp__img:hover{
+    transition: 0.3s;
+    transform: scale(0.8, 0.8);
+}
+
+/* ///Lineas del Footer/// */
+.Line__footer{
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.Line__bottom{
+    grid-area: Lbottom;
+    width: 100%;
+    height: 0.1rem;
+}
+.Line__right{
+    grid-area: Lright;
+    width: 0.1rem;
+    height:100%;
+}
+
+
+/* //////////////////////////// Mobile Desing //////////////////////////// */
+
+
+@media (min-width: 319px) and (max-width:768px) {
+    /* /////////////////////Nav/////////////////// */
+    
+    .headerSec_div_txt{
+        font-size: 0.8rem;
+    }
+    .navMenu_div{
+        width: 4rem;
+        height: 3rem;
+        object-fit: contain;
+    }
+    .containerM{
+        gap: 0.1rem;
+    }
+    .nav-left, .nav-center, .nav-right{
+        gap: 0.2rem;
+    }
+    .nav-right .dropdown{
+        margin: 0;
+    }
+    /* ///Offcanvas/// */
+    .nav-left .nav-left__off, .nav-right .nav-right__off__canvas{
+        display: initial;
+    }    
+    .offcanvas-body__account{
+        display: flex;
+        gap: 1rem;
+    }
+    .offcanvas-body__account__img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .offcanvas-body__account__txt h3{
+        font-size: 1rem;
+        margin: 0;
+    }
+    /* Acordeon de menu */
+    .nav-left button{
+        padding: 0;
+    }
+    .accordion-item button {
+        padding: 1rem 0 0 0
+    }
+
+    /* Label de busqueda */
+    .search-box__img{
+        width: 1rem;
+        height: 1rem;
+    }
+    .search-icon{
+        top: 25%;
+        right: 0.3rem;
+    }
+    #search-input{
+        padding: 0.5rem;
+        width: 10rem;
+        height: 3rem;
+        font-size: 0.8rem;
+    }
+    .btn-nav{
+        border-radius: 0.7em;
+        padding: 5px;
+    }
+    .dropdown-toggle-1{
+        display: none;
+    }
+    .dropdown-toggle-2{
+        padding: 0;
+    } 
+    .dropdown__imgs, .btn-nav__imgs{
+        width: 2rem;
+        height: 1.8rem;
+    }
+    .navMenu h6{
+        display:none;
+    }
+    /* Boton de cuenta */
+    .nav-right .btn-nav-1{
+        display: none;
+    }
+
+    /* ////////Pagina Inicio/////// */
+
+    /* ///Banner Principal/// */
+    .carrousel-novedades__imgs{
+        height: 16em;
+    }
+
+    /* ///Seccion de contenido/// */
+    .contenido{
+        padding: 0.2em;
+        margin-top: 0.5rem;
+    }
+    .contenido__boxes{
+        gap: 0.2em;
+    }
+    .contenido__imgs{
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .contenido__p{
+        font-size: xx-small;
+        margin: 0;
+    }
+
+    /* ///Carrouseles Marign/// */
+    .Carrousel{
+        margin-top: 0.5rem;
+    }
+
+
+    /* ///Carrousel P Destacados/// */
+    .Carrousel-Destacados__imgs{
+        width: 12em;
+        height: 8em;
+    }
+
+    /* ///Carrousel Ofertas/// */
+    .Carrousel-Ofertas__imgs{
+        width: 12em;
+        height: 8em;
+    }
+    
+    /* ///Seccion Categorias/// */
+    .sec{
+        margin: 0.5rem 0 0.5rem 0;
+    } 
+    .sec-destacada{
+        gap: 1.8rem;
+    } 
+    .btn__sec{
+        display: block;
+    }
+
+    /* //////////////////////Footer///////////////// */
+    #footer{
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .footerBox{
+        column-gap: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 0.1fr 1fr;
+        grid-template-areas: 
+        "Menunav Menunav"
+        "Mp Social"
+        "Me Contacto"
+        "Lbottom Lbottom"
+        "Copyr Copyr";
+    }
+    /* ///Imagenes/// */
+    .footerBox__li__img{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    .footerBox__Mp__img{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .footerBox__Me__img{
+        width: 2.5rem;
+        height: 2rem;
+    }
+    .footerBox__Social__img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /* ///textos/// */
+    .footerBox__h2, .footerBox__h5{
+        font-size: 1rem;
+    }
+    .footerBox__li__a{
+        font-size: small;
+    }
+
+    /* ///Linea/// */
+    .Line__right{
+        display: none;
+    }
+
+    /* ///Menu/// */
+    .footerBox__Menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Pagina de  Nosotros*/
+    .sec-Grid{
+        padding: 1rem;
+        /* margin-top: 2rem; */
+        row-gap: 1rem;
+    }
+    .sec-Grid__vid{
+        height: 22rem;
+    }
+    .line{
+        width: 0.1rem;
+    }
+    .sec-Grid__imgs{
+        width: 10rem;
+        height: 10rem;
+    }
+    .sec-Grid__txts{
+        text-align: center;
+        width: 10rem;
+        height: 6rem;
+        overflow-y: hidden;
+    }
+    .sec-Grid__boxes{
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}
+
+    
+/* Pagina de  Productos */
+
+/* Pagina de  Marcas*/
+.Bcumb{
+    margin-top: 2rem;
+}
+.bar__imgs{
+    width: 1em;
+    height: 1em;
+}
+.bar__btn{
+    font-size: smaller;
+    padding: 0.5em;
+}
+.ctn__boxes{
+    width: 22em;
+}
+.ctn__boxes__cont__imgs{
+    width: 22em;
+    object-fit: contain;
+}
+
+
+/* Pagina de  Servicios*/
+
+/* /////////////////////////// Tablet Desing ///////////////////////////// */
+
+/* Pagina de  Inicio*/
+
+/* Pagina de  Productos*/
+
+/* Pagina de  Marcas*/
+
+/* Pagina de  Nosotros*/
+
+/* Pagina de  Servicios*/
