@@ -53,7 +53,9 @@
                         </div>
                         <!-- ///-Offcanvas-de-Bootstrap-/// -->
                         <button class="btn nav-left__off" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                            <img class="dropdown__imgs" src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-list dropdown__imgs" viewBox="0 0 16 16" alt="icono-menu">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                            </svg>
                         </button>
                         <div class="offcanvas offcanvas-start nav-left__off" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header">
@@ -81,11 +83,11 @@
                                         </h2>
                                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body">
-                                                <ul>
-                                                    <li><a href="/">Marcas</a></li>
-                                                    <li><a href="/">Productos</a></li>
-                                                    <li><a href="/">Servicios</a></li>
-                                                    <li><a href="/">Nostros</a></li>
+                                                <ul class="accordion-body__list">
+                                                    <li><a class="accordion-body__list__a" href="pages/marcas.html">Marcas</a></li>
+                                                    <li><a class="accordion-body__list__a" href="pages/productos.html">Productos</a></li>
+                                                    <li><a class="accordion-body__list__a" href="pages/nosotros.html">Servicios</a></li>
+                                                    <li><a class="accordion-body__list__a" href="pages/servicios.html">Nostros</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -103,12 +105,10 @@
                                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                                 </svg> <h6>Categorias</h6></button>
                             <ul class="navMenu_ul dropdown-menu">
-                                <li class="navMenu_ul_li">
-                                    <a href="pages/marcas.html" class="dropdown-item navMenu_ul_li_a">Marcas</a>
-                                </li>
-                                <li><a href="pages/productos.html" class="dropdown-item  navMenu_ul_li_a">Productos</a></li>
-                                <li><a href="pages/nosotros.html" class="dropdown-item  navMenu_ul_li_a">Nosotros</a></li>
-                                <li><a href="pages/servicios.html" class="dropdown-item navMenu_ul_li_a">Servicios</a></li>
+                                <li><a href="pages/marcas.html" class="dropdown-item">Marcas</a></li>
+                                <li><a href="pages/productos.html" class="dropdown-item ">Productos</a></li>
+                                <li><a href="pages/nosotros.html" class="dropdown-item ">Nosotros</a></li>
+                                <li><a href="pages/servicios.html" class="dropdown-item">Servicios</a></li>
                             </ul>
                         </div>
                         <!-- ///-Fin-boton-/// -->
@@ -207,24 +207,24 @@
                                 <div class="modal-footer col-4 col-sm-8">
                                     <div class="Modal__footer">
                                         <h3 class="Modal__footer__h3">o usar tu cuenta de</h3>
-                                        <div>
-                                            <a href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-google" viewBox="0 0 16 16" alt="icon-google">
-                                                    <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                                        <!-- Iconos-Footer-Modal -->
+                                        <div class="Modal__footer__icons">
+                                            <a href="https://www.google.com/?hl=es" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                                                    <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
                                                 </svg>
                                             </a>
-                                            <a href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
-                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                            <a href="https://www.facebook.com/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                                                    <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
                                                 </svg>
                                             </a>
-                                            <a href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                            <a href="https://www.linkedin.com/feed/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                                                    <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
                                                 </svg>
                                             </a>
                                         </div>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -266,34 +266,29 @@
 
     <main id="main">
         <!-- Carrousel Novedades -->
-        <section class="carrousel-novedades">
-            <div id="carouselExampleIndicators" class="carousel slide">
+                            <!-- Solucionar una variable para que la barra tenga movimiento continuo en funcion a los segundos antes de seguir a la otra imagen -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide carrousel-novedades" data-bs-ride="carousel">
+            <div class="carousel-inner">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="medias\Pagina Main\banner de novedades/carrousel1.webp" class="d-block w-100 carrousel-novedades__imgs" alt="imagen-novedades-1">
+                        <img src="medias\Pagina Main\banner de novedades/carrousel1.webp" class="d-block w-100 carrousel-novedades__imgs" alt="imagen-novedades-1">
                     </div>
                     <div class="carousel-item">
-                    <img src="medias\Pagina Main\banner de novedades/carrousel2.webp" class="d-block w-100 carrousel-novedades__imgs" alt="imagen-novedades-2">
+                        <img src="medias\Pagina Main\banner de novedades/carrousel2.webp" class="d-block w-100 carrousel-novedades__imgs" alt="imagen-novedades-2">
                     </div>
                     <div class="carousel-item">
-                    <img src="medias\Pagina Main\banner de novedades/carrousel3.webp" class="d-block w-100 carrousel-novedades__imgs" alt="imagen-novedades-3">
+                        <img src="medias\Pagina Main\banner de novedades/carrousel3.webp" class="d-block w-100 carrousel-novedades__imgs" alt="imagen-novedades-3">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-                </div>
-        </section>
+                
+            </div>
+        </div>
+
         <!-- Seccion de contenido -->
         <div class="contenido">
             <div class="contenido__boxes"><img class="contenido__imgs" src="https://img.icons8.com/?size=100&id=8290&format=png&color=000000" alt=""> <p class="contenido__p">Envios a todo <br>el pais</p></div>
@@ -305,9 +300,42 @@
         <!-- Carrousel de Productos Destacados -->
         <div class="Carrousel">
             <h5>Productos Destacados</h5>
-            <div class="Carrousel-Destacados">
+            <div id="carouselExample" class=" carousel Carrousel-Destacados">
+                <div class="Carrousel-Destacados__box">
+                    <div >
+                        <img class="Carrousel-Destacados__imgs" src="medias\Pagina Main\Carrousel-Productos/Amoladora.webp" alt=""></div>
+                    <div >
+                        <img class="Carrousel-Destacados__imgs" src="medias\Pagina Main\Carrousel-Productos/Destornillador.webp" alt=""></div>
+                    <div >
+                        <img class="Carrousel-Destacados__imgs" src="medias\Pagina Main\Carrousel-Productos/Nivel.webp" alt=""></div>
+                    <div >
+                        <img class="Carrousel-Destacados__imgs" src="medias\Pagina Main\Carrousel-Productos/pelacables.webp" alt=""></div>
+                    <div >
+                        <img class="Carrousel-Destacados__imgs" src="medias\Pagina Main\Carrousel-Productos/taladro.webp" alt=""></div>
+                    <div >
+                        <img class="Carrousel-Destacados__imgs" src="medias\Pagina Main\Carrousel-Productos/Tijera-Podar.webp" alt=""></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="grey" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                    </svg>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="grey" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                    </svg>
+                </button>
+            </div>
+            
+            
+            
+            
+            
+            
+            <!-- <div class="Carrousel-Destacados">
                 <div >
                     <button class="btn">
+                        
                         <img class="btn__imgs" src="https://img.icons8.com/?size=100&id=26146&format=png&color=000000" alt="">
                     </button>
                 </div>
@@ -324,18 +352,13 @@
                         <img class="btn__imgs" src="https://img.icons8.com/?size=100&id=26147&format=png&color=000000" alt="">
                     </button>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- Carrousel de Ofertas -->
         <div class="Carrousel">
             <h5>Ofertas Imperdibles</h5>
-            <div class="Carrousel-Ofertas">
-                <div>
-                    <button class="btn">
-                        <img class="btn__imgs" src="https://img.icons8.com/?size=100&id=26146&format=png&color=000000" alt="">
-                    </button>
-                </div>
+            <div id="carouselExampleOffer" class="Carrousel-Ofertas carousel">
                 <div class="Carrousel-Ofertas__box">
                     <div class="Carrousel-Ofertas__slide"><img class="Carrousel-Ofertas__imgs" src="medias\Pagina Main\Carrousel-Ofertas/1.webp" alt=""></div>
                     <div class="Carrousel-Ofertas__slide"><img class="Carrousel-Ofertas__imgs" src="medias\Pagina Main\Carrousel-Ofertas/2.webp" alt=""></div>
@@ -344,23 +367,27 @@
                     <div class="Carrousel-Ofertas__slide"><img class="Carrousel-Ofertas__imgs" src="medias\Pagina Main\Carrousel-Ofertas/5.webp" alt=""></div>
                     <div class="Carrousel-Ofertas__slide"><img class="Carrousel-Ofertas__imgs" src="medias\Pagina Main\Carrousel-Ofertas/6.webp" alt=""></div>
                 </div>
-                <div>
-                    <button class="btn">
-                        <img class="btn__imgs" src="https://img.icons8.com/?size=100&id=26147&format=png&color=000000" alt="">
-                    </button>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleOffer" data-bs-slide="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="grey" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                    </svg>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleOffer" data-bs-slide="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="grey" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                    </svg>
+                </button>
             </div>
-            
         </div>
         <!-- Seccion de Categorias mas populares -->
         <div class="sec">
             <h5>Categorias Destacadas</h5>
-            <div class="sec-container">
-                <div>
+            <div id="carouselExampleSeccion" class="sec-container">
+                <!-- <div>
                     <button class="btn__sec">
                         <img class="btn__imgs" src="https://img.icons8.com/?size=100&id=37353&format=png&color=000000" alt="icon-arrow-left">
                     </button>
-                </div>
+                </div> -->
                 <div class="sec-destacada">
                     <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias/Herramientas.webp" alt=""><p>Herramientas</p></div>
                     <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias/Carpinteria.webp" alt=""><p>Carpinteria</p></div>
@@ -373,13 +400,33 @@
                     <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias/rodillos.webp" alt=""><p>Rodillos</p></div>
                     <div class="sec-destacada__boxes"><img class="sec-destacada__img" src="medias\Pagina Main\Carrousel-Categorias/Ceramicas.webp" alt=""><p>Ceramica</p></div>
                 </div>
-                <div>
+                <!-- <div>
                     <button class="btn__sec">
                         <img class="btn__imgs" src="https://img.icons8.com/?size=100&id=37354&format=png&color=000000" alt="icon-arrow-right">
                     </button>
-                </div>
+                </div> -->
+                <button class="carousel-control-prev btn__sec" type="button" data-bs-target="#carouselExampleOffer" data-bs-slide="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                    </svg>
+                </button>
+                <button class="carousel-control-next btn__sec" type="button" data-bs-target="#carouselExampleOffer" data-bs-slide="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </button>
             </div>
         </div>
+        <!-- ///-Burbuja-de-Whatsapp-/// -->
+        <div class="main__whts">
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="75" height="75" viewBox="0 0 48 48">
+                <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+        
+        
     </main>
 
     <!-- //////////////-Footer-////////////// -->

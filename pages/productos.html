@@ -264,7 +264,7 @@
         </div>
     </header>
 
-    <main id="main">
+    <main id="main-B">
         <!-- Indicador de pagina actual con navegacion jerarquica -->
         <div class="Bcumb" aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -280,7 +280,9 @@
         <!-- Filtros para Productos -->
         <div class="subNav ">
             <div class="subNav-left">
-                <img class="bar__imgs" src="https://img.icons8.com/?size=100&id=21890&format=png&color=000000" alt="icon-flechas-dobles">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" class="bi bi-sort-down" viewBox="0 0 16 16">
+                    <path d="M3.5 2.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 11.293zm3.5 1a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+                </svg>
                 <h6>Ordenar por</h6>
                 <div class="dropdown ">
                     <button class="dropdown-toggle bar__btn" type="button" data-bs-toggle="dropdown" >Mayor precio</button>
@@ -296,8 +298,12 @@
             </div>
             
             <div class="subNav-right">
-                <button class="bar__btn__grid"><img class="bar__imgs" src="https://img.icons8.com/?size=100&id=20440&format=png&color=000000" alt="icon-listas"><a href="/"></a></button>
-                <button class="bar__btn__grid"><img class="bar__imgs" src="https://img.icons8.com/?size=100&id=LZaZGEPLefhv&format=png&color=000000" alt="icon-cuadricula"><a href="/"></a></button>
+                <button class="bar__btn__grid"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" class="bi bi-list-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                    </svg></a></button>
+                <button class="bar__btn__grid"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
+                    <path d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1z"/>
+                    </svg></a></button>
             </div>
         </div>
 
@@ -524,6 +530,8 @@
     <!-- Script del bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <!-- Script para que funcionen los toasts -->
-    <script src="/assets/toasts.js"></script>
+<script src="/assets/toasts.js"></script>
+    <!-- Script del captcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfDOUorAAAAAF1wx5DSk1DChbRwCtCf-NVfQDLG"></script>
 </body>
 </html>
