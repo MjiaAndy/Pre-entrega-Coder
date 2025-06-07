@@ -10,6 +10,22 @@
       {
         "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "source":"/marcas",
+        "destination":"/pages/marcas.html"
+      },
+      {
+        "source":"/productos",
+        "destination":"/pages.productos.html"
+      },
+      {
+        "source":"/nosotros",
+        "destination":"/pages/nosotros.html"
+      },
+      {
+        "source":"/servicios",
+        "destination":"/pages/servicios.html"
       }
     ]
   }
