@@ -13,7 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm run build
+
+      # --- ¡PASO AGREGADO: Configurar Node.js! ---
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4 # Usa la última versión para Node.js
+        with:
+          node-version: '20' # Puedes cambiar '20' por la versión de Node.js que uses en tu proyecto (ej. '18', '22')
+
+      # --- ¡PASO AGREGADO: Instalar Dependencias! ---
+      - name: Install dependencies
+        run: npm install # Esto instala todas las dependencias de package.json
+
+      - run: npm run build # Este paso ahora debería encontrar 'vite'
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
