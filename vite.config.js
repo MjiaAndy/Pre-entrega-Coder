@@ -4,7 +4,6 @@ import { resolve } from 'path';
 import { readFileSync } from 'fs';
 
 export default defineConfig({
-    base: '/',
     plugins: [
         ViteEjsPlugin({
             Partialheader: readFileSync(resolve(__dirname,'./partials/header.html'),'UTF-8'),
