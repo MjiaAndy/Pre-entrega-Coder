@@ -1,0 +1,43 @@
+/* ///////////////////Header del sitio///////////////// */
+#header{
+    width: 100%;
+    height: auto;
+}
+/* ///Seccion de contacto siempre visible/// */
+.h-sec{
+    background-color: white;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    &__space{
+        width: 0.4rem;
+        height: 1.4rem;
+        background-color: #E67E22;
+        border-radius: 20px;
+    }
+    &__box{
+        padding: 0%;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    &__img{
+        // margin: 0;
+        width: 1rem;
+        height: 1rem;
+    }
+    &__txt{
+        text-decoration: none;
+        color: #8b8c8c;
+        margin-left: 0.2rem;
+        transition: 0.2s;
+        &:hover{
+            color: #2D2D2D;
+            transition: 0.3s;
+        }
+    }
+}

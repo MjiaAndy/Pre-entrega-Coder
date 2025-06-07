@@ -1,0 +1,254 @@
+/* //////////////////////////// Mobile Desing //////////////////////////// */
+@media (min-width: 319px) and (max-width:768px) {
+    /* /////////////////////Nav/////////////////// */
+    
+    .headerSec_div_txt{
+        font-size: 0.8rem;
+    }
+    .navMenu_div{
+        width: 4rem;
+        height: 3rem;
+        object-fit: contain;
+    }
+    .containerM{
+        gap: 0.1rem;
+    }
+    .nav-left, .nav-center, .nav-right{
+        gap: 0.2rem;
+    }
+    .nav-right .dropdown{
+        margin: 0;
+    }
+    /* ///Offcanvas/// */
+    .nav-left .nav-left__off, .nav-right .nav-right__off__canvas{
+        display: initial;
+    }    
+    .offcanvas-body__account{
+        display: flex;
+        gap: 1rem;
+    }
+    .offcanvas-body__account__img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .offcanvas-body__account__txt h3{
+        font-size: 1rem;
+        margin: 0;
+    }
+    /* Acordeon de menu */
+    .nav-left button{
+        padding: 0;
+    }
+    .accordion-item button {
+        padding: 1rem 0 0 0
+    }
+
+    /* Label de busqueda */
+    .search-box__img{
+        width: 1rem;
+        height: 1rem;
+    }
+    .search-icon{
+        top: 25%;
+        right: 0.3rem;
+    }
+    #search-input{
+        padding: 0.5rem;
+        width: 10rem;
+        height: 3rem;
+        font-size: 0.8rem;
+    }
+    .btn-nav{
+        border-radius: 0.7em;
+        padding: 5px;
+    }
+    .dropdown-toggle-1{
+        display: none;
+    }
+    .dropdown-toggle-2{
+        padding: 0;
+    } 
+    .dropdown__imgs, .btn-nav__imgs{
+        width: 2rem;
+        height: 1.8rem;
+    }
+    .navMenu h6{
+        display:none;
+    }
+    /* Boton de cuenta */
+    .nav-right .btn-nav-1{
+        display: none;
+    }
+
+    /* ////////Pagina Inicio/////// */
+
+    /* ///Banner Principal/// */
+    .carrousel-novedades__imgs{
+        height: 16em;
+    }
+
+    /* ///Seccion de contenido/// */
+    .contenido{
+        padding: 0.2em;
+        margin-top: 0.5rem;
+    }
+    .contenido__boxes{
+        gap: 0.2em;
+    }
+    .contenido__imgs{
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .contenido__p{
+        font-size: xx-small;
+        margin: 0;
+    }
+
+    /* ///Carrouseles Marign/// */
+    .Carrousel{
+        margin-top: 0.5rem;
+    }
+
+
+    /* ///Carrousel P Destacados/// */
+    .Carrousel-Destacados__imgs{
+        width: 12em;
+        height: 8em;
+    }
+
+    /* ///Carrousel Ofertas/// */
+    .Carrousel-Ofertas__imgs{
+        width: 12em;
+        height: 8em;
+    }
+    
+    /* ///Seccion Categorias/// */
+    .sec{
+        margin: 0.5rem 0 0.5rem 0;
+    } 
+    .sec-destacada{
+        gap: 1.8rem;
+    } 
+    .btn__sec{
+        display: block;
+    }
+
+    /* //////////////////////Footer///////////////// */
+    #footer{
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .footerBox{
+        column-gap: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 0.1fr 1fr;
+        grid-template-areas: 
+        "Menunav Menunav"
+        "Mp Social"
+        "Me Contacto"
+        "Lbottom Lbottom"
+        "Copyr Copyr";
+    }
+    /* ///Imagenes/// */
+    .footerBox__li__img{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    .footerBox__Mp__img{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .footerBox__Me__img{
+        width: 2.5rem;
+        height: 2rem;
+    }
+    .footerBox__Social__img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /* ///textos/// */
+    .footerBox__h2, .footerBox__h5{
+        font-size: 1rem;
+    }
+    .footerBox__li__a{
+        font-size: small;
+    }
+
+    /* ///Linea/// */
+    .Line__right{
+        display: none;
+    }
+
+    /* ///Menu/// */
+    .footerBox__Menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Pagina de  Nosotros*/
+    .sec-Grid{
+        padding: 1rem;
+        /* margin-top: 2rem; */
+        row-gap: 1rem;
+    }
+    .sec-Grid__vid{
+        height: 22rem;
+    }
+    .line{
+        width: 0.1rem;
+    }
+    .sec-Grid__imgs{
+        width: 10rem;
+        height: 10rem;
+    }
+    .sec-Grid__txts{
+        text-align: center;
+        width: 10rem;
+        height: 6rem;
+        overflow-y: hidden;
+    }
+    .sec-Grid__boxes{
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}
+
+    
+/* Pagina de  Productos */
+
+/* Pagina de  Marcas*/
+.Bcumb{
+    margin-top: 2rem;
+}
+.bar__imgs{
+    width: 1em;
+    height: 1em;
+}
+.bar__btn{
+    font-size: smaller;
+    padding: 0.5em;
+}
+.ctn__boxes{
+    width: 22em;
+}
+.ctn__boxes__cont__imgs{
+    width: 22em;
+    object-fit: contain;
+}
+
+
+/* Pagina de  Servicios*/
+
+/* /////////////////////////// Tablet Desing ///////////////////////////// */
+
+/* Pagina de  Inicio*/
+
+/* Pagina de  Productos*/
+
+/* Pagina de  Marcas*/
+
+/* Pagina de  Nosotros*/
+
+/* Pagina de  Servicios*/

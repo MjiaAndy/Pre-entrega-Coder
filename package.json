@@ -1,0 +1,42 @@
+{
+  "name": "pre-entrega1_andres-mejia",
+  "version": "1.0.0",
+  "description": "Es una plataforma de ecomerce especializada en la venta de herramientas, insumos para la construcción y maquinaria industrial. Su objetivo es facilitar el acceso a productos de alta calidad para profesionales del rubro, empresas constructoras, talleres y usuarios particulares que buscan equipamiento confiable y duradero.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postcss": "postcss src/ **/*.css -o style.min.css --no-map",
+    "stylelint": "stylelint 'src/ **/*.scss'",
+    "stylelint-fix": "stylelint 'src/ **/*.scss' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MjiaAndy/Pre-entrega-Coder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MjiaAndy/Pre-entrega-Coder/issues"
+  },
+  "homepage": "https://github.com/MjiaAndy/Pre-entrega-Coder#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.1",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.7",
+    "ejs": "^3.1.10",
+    "postcss": "^8.5.4",
+    "postcss-cli": "^11.0.1",
+    "sass-embedded": "^1.89.1",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "vite": "^6.3.5",
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-plugin-template": "^1.0.3"
+  }
+}

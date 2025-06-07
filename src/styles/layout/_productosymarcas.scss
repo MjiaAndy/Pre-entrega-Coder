@@ -1,0 +1,69 @@
+/* ////////////////////////-PAGINA-DE-PRODUCTOS-//////////////////// */
+#main-B{/* Main de otro color solo para esta pagina */
+    padding-top: 1rem;
+    min-height: 100vh;
+    background-color: #F1F1EB;
+}
+/* ////////////////////-COMPARTIDOS-DE-AMBAS-PAGINAS-///////////////////// */
+/* -Indicador-de-Pagina-Actual */
+.crumb-box{
+    margin-top: 0;
+    padding-left: 2rem;
+    .breadcrumb{
+        color: rgba(0, 0, 0, 0.929);
+        .breadcrumb-item a{
+            text-decoration: none;
+            color: rgb(76, 76, 76);
+        }
+    }
+}
+/* Box container de las cards */
+.section-cards{
+    display: flex;
+    position: relative;
+    z-index: 10;
+    gap: 2rem;
+    justify-content: space-evenly;
+    padding: 2.5rem;
+    flex-wrap: wrap;
+}
+/* ///-Barra-de-Filtros-/// */
+.filter-nav{
+    padding: 1rem;
+    background-color: rgba(240, 240, 240, 0.544);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(2rem);
+    box-shadow: #2a2a2a6c  0px 2px 4px;
+    position: relative;
+    z-index: 20;
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+        padding-left: 1rem;
+    }
+    &__btn-menu{/* Boton de filtro */
+        color: black;
+        background-color: white;
+        padding: 0.4em;
+        border-radius: 0.6em;
+        border-style: double;
+        transition: 0.2s;
+        &:hover{
+            background-color: #ff9b20d5;
+            color: white;
+            transition: 0.2s;
+        }
+    }
+    &__btn-grid{/* Botones-grid-contenido */
+        border-style: none;
+        transition: 0.3s;
+        &:hover{
+            transition: 0.3s;
+            transform: scale(0.85, 0.85);
+        }
+    }
+}

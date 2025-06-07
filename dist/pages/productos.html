@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono de pagina -->
+    <link rel="shortcut icon" href="../medias\icons\Logo.webp" type="image/x-icon">
+    <!-- Fuentes utilizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <!-- Link al bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Link de iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Productos</title>
+  <script type="module" crossorigin src="/assets/main-DbOgRBsK.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-B17zYyu_.css">
+</head>
+<body id="body">
+    <header>
+        <header id="header">
+    <!-- ///-Box-contacto-fijo-/// -->
+    <section class="h-sec">
+        <div class="h-sec__box">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-envelope-at-fill h-sec__img" viewBox="0 0 16 16" alt="icono-email">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+            </svg>
+            <a target="_blank" href="#" class="h-sec__txt" >contacto@laobra.com.ar</a>
+        </div>
+        <div class="h-sec__space"></div>
+        <div class="h-sec__box">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-telephone-fill h-sec__img" viewBox="0 0 16 16" alt="icono-telefono">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg>
+            <a target="_blank" href="#" class="h-sec__txt" >0802-120-21004</a>
+        </div>
+    </section>
+    <!-- ////////////-NAV-/////////// -->
+    <nav class="h-nav">
+        <!-- ///-Box-izquierda-del-nav-/// -->
+        <div class="h-nav__left">
+            <div class="h-nav__logo-box">
+                <a href="/">
+                    <img class="h-nav__logo" src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659434/Logo_k1ai2k.webp" alt="icono-Logo">
+                </a>
+            </div>
+            <!-- ///-Offcanvas-de-Bootstrap-/// -->
+            <button class="btn h-nav__left-off" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-list dropdown__imgs" viewBox="0 0 16 16" alt="icono-menu">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            <div class="offcanvas offcanvas-start h-nav__left-off" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="offcanvas-body__account">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="offcanvas-body__account__img" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                        <div class="offcanvas-body__account__txt">
+                            <h3>¡Hola de nuevo!</h3>
+                            <a href="#" type="button" data-bs-target="#exampleModal" data-bs-toggle="modal">Iniciar session</a>
+                        </div>
+                    </div>
+                    <!-- ///-Acordeon-de-Bootstrap-/// -->
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Categorias
+                            </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="accordion-body__list">
+                                        <li><a class="accordion-body__a" href="/pages/marcas.html">Marcas</a></li>
+                                        <li><a class="accordion-body__a" href="/pages/productos.html">Productos</a></li>
+                                        <li><a class="accordion-body__a" href="/pages/nosotros.html">Servicios</a></li>
+                                        <li><a class="accordion-body__a" href="/pages/servicios.html">Nostros</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ///-Fin-de-Acordeon-/// -->
+                </div>
+            </div>
+            <!-- ///-Boton-categorias-/// -->
+            <div class="dropdown">
+                <button class="dropdown-toggle dropdown-toggle-1" type="button" data-bs-toggle="dropdown">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-list dropdown__imgs" viewBox="0 0 16 16" alt="icono-menu">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg> <h6>Categorias</h6></button>
+                <ul class="navMenu_ul dropdown-menu">
+                    <li><a href="/pages/marcas.html" class="dropdown-item">Marcas</a></li>
+                    <li><a href="/pages/productos.html" class="dropdown-item ">Productos</a></li>
+                    <li><a href="/pages/nosotros.html" class="dropdown-item ">Nosotros</a></li>
+                    <li><a href="/pages/servicios.html" class="dropdown-item">Servicios</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ///-Box centro del nav-/// -->
+        <div class="h-nav__center">
+            <!-- ///-Barra-de-busqueda-/// -->
+            <div class="h-nav__search-box">
+                <label for="search-input" class="h-nav__search-label">
+                    <input type="text" id="search-input" placeholder="¿Que estas buscando?">
+                    <span class="h-nav__search-img-box"><img class="h-nav__search-img" src="https://img.icons8.com/?size=100&id=7695&format=png&color=000000" alt="icono-lupa"></span>
+                </label>
+            </div>
+        </div>
+        <!-- ///-Box derecha del nav-/// -->
+        <div class="h-nav__right">
+            <!-- ///-Boton-ubicacion-/// -->
+            <div class="dropdown">
+                <button class="dropdown-toggle dropdown-toggle-2" type="button" data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-geo-alt-fill dropdown__imgs" viewBox="0 0 16 16" alt="icono-ubicacion">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg><h6>Estas en</h6></button>
+                <div id="navbarSupportedContent">
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Salta</a></li>
+                        <li><a class="dropdown-item" href="#">Tartagal</a></li>
+                        <li><a class="dropdown-item" href="#">Oran</a></li>
+                        <li><a class="dropdown-item" href="#">Jujuy</a></li>
+                        <li><a class="dropdown-item" href="#">Tucuman</a></li>
+                        <li><a class="dropdown-item" href="#">Catamarca</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Modal para crear cuenta -->
+            <button type="button" class="btn h-nav__btn h-nav__btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="white" width="32" height="32" class="bi bi-person-circle" viewBox="0 0 16 16" alt="icon-user">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </button>
+            <!-- Cuerpo-del-Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h2 class="modal-title fs-2 row-cols-8" id="exampleModalLabel">Iniciar sesión</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-target="exampleModal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="Modal__body">
+                            <div class="Modal__body__input">
+                                <div class="mb-3 row g-3">
+                                    <div class="col-auto">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-auto">
+                                        <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Contraseña">
+                                    </div>
+                                    <div class="col-auto">
+                                        <span id="passwordHelpInline" class="form-text ">de 8-20 caracteres.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Modal__body__a">
+                                <div class="form-check">
+                                    <input class="form-check-input " type="checkbox" value="" id="checkChecked" checked>
+                                    <label class="form-check-label me-3" for="checkChecked">Recordar usuario</label>
+                                    <span><a href="#">olvidaste la contraseña?</a></span>
+                                </div>
+                            </div>
+                            <div class="Modal__body__btn">
+                                <button class="Modal__body__btn-btns">Registrarse</button>
+                                <button class="Modal__body__btn-btns">Acceder</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer  d-flex justify-content-center w-100">
+                        <div class="Modal__footer">
+                            <h3 class="Modal__footer__h3">o usar tu cuenta de</h3>
+                            <!-- Iconos-Footer-Modal -->
+                            <div class="Modal__footer__icons">
+                                <a href="https://www.google.com/?hl=es" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                                        <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                                        <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/feed/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                                        <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Offcanvas para carrito -->
+            <div class="h-nav__right-off">
+                <button class="btn h-nav__btn h-nav__btn-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="32" height="32" class="bi bi-cart4" viewBox="0 0 16 16" alt="icon-carrito">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                    </svg>
+                </button>
+                <div class="offcanvas offcanvas-end nav-right__off__canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasRight" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>Hola mundo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ////////////-Fin-Nav-///////////// -->
+    </nav>
+</header>
+    </header>
+    <main id="main-B">
+        <!-- Indicador de pagina actual con navegacion jerarquica -->
+        <div class="crumb-box" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="breadcrumb-item">
+                    Productos
+                </li>
+            </ol>
+        </div>
+        <!-- Filtros para Productos -->
+        <div class="filter-nav">
+            <div class="filter-nav__left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentcolor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/>
+                </svg>
+                <h6>Ordenar por</h6>
+                <div class="dropdown">
+                    <button class="dropdown-toggle filter-nav__btn-menu" type="button" data-bs-toggle="dropdown" >Mayor precio</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Menor precio</a></li>
+                        <li><a class="dropdown-item" href="#">Nuevo ingreso</a></li>
+                        <li><a class="dropdown-item" href="#">Antiguos</a></li>
+                        <li><a class="dropdown-item" href="#">Nombre ascendente</a></li>
+                        <li><a class="dropdown-item" href="#">Mejor valorados</a></li>
+                        <li><a class="dropdown-item" href="#">Mas vendidos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter-nav__right">
+                <button class="filter-nav__btn-grid"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-ui-checks" viewBox="0 0 16 16">
+                    <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zM2 1a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm0 8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2zm.854-3.646a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 1 1 .708.708zm0 8a.5.5 0 0 1-.708 0l-1-1a.5.5 0 0 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708.708zM7 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/></svg><a href="/"></a></button>
+                <button class="filter-nav__btn-grid"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
+                    <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1m9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0z"/></svg></a></button>
+            </div>
+        </div>
+        <!-- Caja y Cards de Productos -->
+        <section class="section-cards">
+            <div class="product-card">
+                <div class="product-card__img-box">
+                    <img class="product-card__img" src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659598/buscapolo_qejafy.webp" alt="img-producto">
+                </div>
+                <div class="product-card__content">
+                    <h5 class="product-card__tittle">Titulo del Producto</h5>
+                    <p class="product-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, magni.</p>
+                    <h3 class="product-card__price">$$Precio</h3>
+                    <button type="button" class="product-card__btn" id="liveToastBtn">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__img-box">
+                    <img class="product-card__img" src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659600/caladora_w3a3xd.webp" alt="img-producto">
+                </div>
+                <div class="product-card__content">
+                    <h5 class="product-card__tittle">Titulo del Producto</h5>
+                    <p class="product-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, magni.</p>
+                    <h3 class="product-card__price">$$Precio</h3>
+                    <button type="button" class="product-card__btn" id="liveToastBtn">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__img-box">
+                    <img class="product-card__img" src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659600/cierra-circular_nu1ok3.webp" alt="img-producto">
+                </div>
+                <div class="product-card__content">
+                    <h5 class="product-card__tittle">Titulo del Producto</h5>
+                    <p class="product-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, magni.</p>
+                    <h3 class="product-card__price">$$Precio</h3>
+                    <button type="button" class="product-card__btn" id="liveToastBtn">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__img-box">
+                    <img class="product-card__img" src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659601/Cinta-pasacables_kvfswp.webp" alt="img-producto">
+                </div>
+                <div class="product-card__content">
+                    <h5 class="product-card__tittle">Titulo del Producto</h5>
+                    <p class="product-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, magni.</p>
+                    <h3 class="product-card__price">$$Precio</h3>
+                    <button type="button" class="product-card__btn" id="liveToastBtn">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__img-box">
+                    <img class="product-card__img" src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659602/Corte-vertical_ku9ay5.webp" alt="img-producto">
+                </div>
+                <div class="product-card__content">
+                    <h5 class="product-card__tittle">Titulo del Producto</h5>
+                    <p class="product-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, magni.</p>
+                    <h3 class="product-card__price">$$Precio</h3>
+                    <button type="button" class="product-card__btn" id="liveToastBtn">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__img-box">
+                    <img class="product-card__img" src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659622/Lijadora_dstnir.webp" alt="img-producto">
+                </div>
+                <div class="product-card__content">
+                    <h5 class="product-card__tittle">Titulo del Producto</h5>
+                    <p class="product-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, magni.</p>
+                    <h3 class="product-card__price">$$Precio</h3>
+                    <button type="button" class="product-card__btn" id="liveToastBtn">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__img-box">
+                    <img class="product-card__img" src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659623/llave-inglesa_xygwyf.webp" alt="img-producto">
+                </div>
+                <div class="product-card__content">
+                    <h5 class="product-card__tittle">Titulo del Producto</h5>
+                    <p class="product-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, magni.</p>
+                    <h3 class="product-card__price">$$Precio</h3>
+                    <button type="button" class="product-card__btn" id="liveToastBtn">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__img-box">
+                    <img class="product-card__img" src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659624/tester_vx5bxo.webp" alt="img-producto">
+                </div>
+                <div class="product-card__content">
+                    <h5 class="product-card__tittle">Titulo del Producto</h5>
+                    <p class="product-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, magni.</p>
+                    <h3 class="product-card__price">$$Precio</h3>
+                    <button type="button" class="product-card__btn" id="liveToastBtn">Añadir al carrito</button>
+                </div>
+            </div>
+            <!-- Alertas de producto añadido al carrito -->
+            <div aria-live="polite" aria-atomic="true" class="position-absolute d-flex justify-content-center align-items-center w-100">
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black" class="bi bi-cart-check-fill rounded me-2" viewBox="0 0 16 16" alt="icon-alert-toasts">
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                </svg> 
+                                <strong class="me-auto">Lista de Compras</strong>
+                                <small>hace 1 seg</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                El producto se ha añadio al carrito
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- //////////////-Footer-////////////// -->
+<footer id="footer">
+    <div class="f-container">
+        <!-- ///-Box-Menu-de-navegacion-/// -->
+        <div class="f-container__menu">
+            <h2 class="f-container__h2">Navegacion</h2>
+            <ul class="f-container__ul">
+                <li class="f-container__li"><a href="/" class="f-container__a">Financiacion</a></li>
+                <li class="f-container__li"><a href="/" class="f-container__a">Sucursales</a></li>
+                <li class="f-container__li"><a href="/" class="f-container__a">Metodos de envio</a></li>
+            </ul>
+        </div>
+        <!-- ///-Box-de-contacto-/// -->
+        <div class="f-container__contacts">
+            <h2 class="f-container__h2">Contacto</h2>
+            <ul class="f-container__ul">
+                <li class="f-container__li">
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="black" width="16" height="16" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                    </svg> 
+                    <a target="_blank" href="" class="f-container__a">contacto@laobra.com.ar</a>
+                </li>
+                <li class="footerBox__li">
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="black" width="16" height="16" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                    <a target="_blank" href="" class="f-container__a">0802-120-21004</a>
+                </li>
+            </ul>
+        </div>
+        <!-- ///-Box-Metodos-de-pago-/// -->
+        <div class="f-container__payments">
+            <h2 class="f-container__h2">Metodos de pago:</h2>
+            <div>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659435/mastercard_payment_icon_jmfekb.webp" alt="logo-mastercard" class="f-container__img-payment">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659440/visa_icon_xx2edj.webp" alt="logo-visa" class="f-container__img-payment">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659432/card_debit_mastercard_wf3pvr.webp" alt="logo-mastercard-debit" class="f-container__img-payment" >
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659431/american_express_j7hssi.webp" alt="logo-american-express" class="f-container__img-payment">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659439/skrill_icon_szwjon.webp" alt="logo-skrill" class="f-container__img-payment">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659432/bitcoin_method_icon_czgixh.webp" alt="logo-bitcoin" class="f-container__img-payment">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659438/rupay_icon_bijpf2.webp" alt="logo-rupay" class="f-container__img-payment">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659437/paypal_icon_ilro5k.webp" alt="logo-paypal" class="f-container__img-payment">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659438/pplepay_payment_hxqvqt.webp" alt="logo-applepay" class="f-container__img-payment">
+                </picture>
+            </div>
+        </div>
+        <!-- ///-Metodos-de-envio-/// -->
+        <div class="f-container__ships">
+            <h2 class="f-container__h2">Metodos de envio:</h2>
+            <div>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659435/logo-andreani_zoqyfk.webp" alt="logo-andreani" class="f-container__img-ship">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659433/fedex_qd1sgd.webp" alt="logo-fedex" class="f-container__img-ship">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659434/flash_qymciy.webp" alt="logo-flash" class="f-container__img-ship">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659439/viacargo_dhqf0a.webp" alt="logo-viacargo" class="f-container__img-ship">
+                </picture>
+                <picture>
+                    <img src="https://res.cloudinary.com/dqk9u5gni/image/upload/v1748659436/ocaenvios1_ktqlxd.webp" alt="logo-oca" class="f-container__img-ship">
+                </picture>
+            </div>
+        </div>
+        <!-- ///-Box-redes-sociales-/// -->
+        <div class="f-container__social">
+            <h2 class="f-container__h2">Seguinos</h2>
+            <a target="_blank" href="https://www.tiktok.com/?kuid=31b6d78a-c086-437f-9ab0-df56eaf7fd8b&kref=vGWRdzLJnjYf"><svg class="f-container__img-social" width="32" height="32"  alt="icono-tiktok" xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-tiktok" viewBox="0 0 16 16">
+                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+            </svg></a>
+            <a target="_blank" href="https://www.facebook.com/"><svg class="f-container__img-social" width="32" height="32"  alt="icono-facebook" xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg></a>
+            <a target="_blank" href="https://www.instagram.com/"><svg class="f-container__img-social" width="32" height="32"  alt="icono-instagram" xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg></a>
+            <a target="_blank" href="https://www.linkedin.com/feed/"><svg class="f-container__img-social" width="32" height="32"  alt="icono-linkedin" xmlns="http://www.w3.org/2000/svg"  fill="black" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </svg></a>
+        </div>
+        <!-- ///-Lineas-del-footer-y-Copyright-/// -->
+        <div class="f-container__line f-container__line-bottom" ></div>
+        <div class="f-container__line f-container__line-right" ></div>
+        <div class="f-container__copy"><h5>Copyright © 2025 - La obra</h5> <a href="/">Terminos y Condiciones</a> </div>
+    </div>
+</footer>
+    </footer>
+    <!-- Script del bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <!-- Script principal -->
+    <!-- Script del captcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfDOUorAAAAAF1wx5DSk1DChbRwCtCf-NVfQDLG"></script>
+</body>
+</html>
